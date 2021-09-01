@@ -1,38 +1,9 @@
 @charset "UTF-8";
-*{
-	margin: 0;
-	padding: 0;
-}
 #header{
 	width: 1200px;
 	height: 80px;
 	margin: 0 auto;
 	/* border: 1px solid black; */
-}
-a{
-	text-decoration-line: none; 
-}
-a:link{ 
-	text-decoration: none;
-	color: black;
-	font-weight: 800;
-}
-a:visited{ 
-	text-decoration: none;
-	color: black;
-	font-weight: 800;
-}
-a:hover{
-	font-weight: 900;
-}
-a[id="h2"]:hover{
-	border-bottom: 4px solid black;	
-}
-a[id="oracle"]:hover{
-	border-bottom: 4px solid black;	
-}
-a[id="CI_leftSide"]:hover{
-	border-bottom: none;
 }
 #CI_area{
 	width: 180px;
@@ -43,7 +14,7 @@ a[id="CI_leftSide"]:hover{
 }
 .board_icon{
 	width: 150px;
-	height: 70px;
+	height: 80px;
 	font-size: 20px;
 	font-weight: bold;
 	float: right;

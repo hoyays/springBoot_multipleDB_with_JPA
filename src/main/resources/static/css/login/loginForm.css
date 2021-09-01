@@ -1,4 +1,11 @@
 @charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+}
 #title_area{
 	width: 1200px;
 	height: 100px;
@@ -15,8 +22,73 @@
 	font-weight: bold;
 	text-align: center;
 }
+#loginInfo_area{
+	width: 520px;
+	margin: 0 auto;
+}
+#loginInfo_area label{
+	font-size: 15px;
+}
+#id_pw_area{
+	width: 520px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	/* border: 1px solid black; */
+}
+#id_pw_area input{
+	width: 100%;
+	height: 40px;
+	border-width: 0 0 1px 0;
+	border-color: #e5e5e5;
+	font-size: 15px;
+}
+#userIdSave{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+input:focus::-webkit-input-placeholder {
+	color:transparent; 
+}
 #loginBtnBox{
 	width: 520px;
 	height: 60px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 15px;
+	box-sizing: border-box;
+	color: #fff;
+	text-align: center;
+	background-color: black;
 	border: 1px solid black;
+}
+#loginBtnBox a{
+	display: block;
+	font-size: 20px;
+}
+#loginBtnBox a:hover{
+	cursor: pointer;
+}
+#memberInfo_area{
+	width: 520px;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	font-size: 13px;
+	/* border: 1px solid black; */
+}
+#memberInfo_area a{
+	position: relative;
+}
+#lookingFor_area{
+	list-style: none;
+	float: right;
+	position: relative;
+	top: -13px;
+}
+#lookingFor_area li{
+	display: inline-block;
+	margin-left: 10px;
+	/* border: 1px solid red; */
 }

@@ -10,4 +10,11 @@ public class HeaderFooterController {
 	public String header() {
 		return "/header";
 	}
+	
+	@RequestMapping("/footer")
+	public String footer() {
+		return "/footer";
+	}
+	
+	
 }

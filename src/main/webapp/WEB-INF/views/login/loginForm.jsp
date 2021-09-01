@@ -15,21 +15,28 @@
 			<p>로그인</p>
 		</div>
 		<form action="">
-			<input type="text" id="" name="" placeholder="아이디"><br>
-			<input type="password" id="" name="" placeholder="비밀번호"><br>
-			<input type="checkbox" id="" name="" value=""><label>아이디저장</label><br>
-			<div id="loginBtnBox">
-				<a>로그인</a>
+		<div id="loginInfo_area">
+			<div id="id_pw_area">
+				<input type="text" id="" name="" placeholder="아이디"><br>
+				<input type="password" id="" name="" placeholder="비밀번호"><br>
 			</div>
-			<div>
-			
-			</div>
-		
-		
-		
-		
-		
-		
+			<input type="checkbox" id="userIdSave" name="" value="Y">
+			<label for="userIdSave">아이디저장</label>
+		</div>
+		<div id="loginBtnBox">
+			<a>로그인</a>
+		</div>
+		<div id="memberInfo_area">
+			<a>회원가입하기 ></a>
+			<ul id="lookingFor_area">
+				<li>아이디찾기</li>
+				<li>|</li>
+				<li>비밀번호찾기</li>
+			</ul>
+		</div>
 		</form>
+		<!-- footer include -->
+		<%@ include file="../footer.jsp" %>
+		<!-- /footer include -->
 	</body>
 </html>

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+}
+#title_area{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 25px;
+	border-bottom: 4px solid #2e3238;
+	/* border: 1px solid red; */
+}
+#title_area p{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+input:focus::-webkit-input-placeholder {
+	color:transparent; 
+}
+
+/* list table ref start */
+/* 
+#writeDetail_area{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+table{
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+th{
+	height: 56px;
+	background: #f3f4f5;
+	font-size: 18px;
+	color: #252525;
+	padding: 15px 0;
+	box-sizing: border-box;
+}
+td{
+	height: 56px;
+	text-align: center;
+	font-size: 16px;
+	color: #252525;
+	padding: 15px 0;
+	box-sizing: border-box;
+	border-bottom: 2px solid #e8ebed;
+}
+td[class="list_ttl_area"]{
+	text-align: left;
+	height: 56px;
+	font-size: 16px;
+	color: #252525;
+	padding: 15px 0;
+	box-sizing: border-box;
+	border-bottom: 2px solid #e8ebed;
+}
+ */
+/* list table ref end */
+
+
+
+/* write css start */
+#write_area{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	/* border: 1px solid black; */
+}
+table{
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+th{
+	height: 50px;
+	background: #f3f4f5;
+	font-size: 18px;
+	color: #252525;
+	padding: 15px 0;
+	border-bottom: 1px solid #252525;
+	box-sizing: border-box;
+}
+td{
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #252525;
+	padding: 15px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid #252525;
+}
+tbody input{
+	width: 98%;
+	height: 40px;
+}
+#btn_area{
+	width: 1200px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
