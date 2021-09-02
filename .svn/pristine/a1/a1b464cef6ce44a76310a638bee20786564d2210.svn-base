@@ -6,12 +6,6 @@
 html, body{
 	height: 100%;
 }
-body{ 
-	-ms-overflow-style: none; 
-} 
-::-webkit-scrollbar { 
-	display: none; 
-}
 #title_area{
 	width: 1200px;
 	height: 100px;
@@ -27,9 +21,6 @@ body{
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
-}
-#title_area strong{
-	color: blue;
 }
 #listTop_area{
 	width: 1200px;
@@ -117,129 +108,6 @@ td[class="list_ttl_area"]{
 	box-sizing: border-box;
 	border-bottom: 2px solid #e8ebed;
 }
-
-/* View Page - modal Start */
-#modal {
-	display: none;
-	position:relative;
-	width:100%;
-	height:100%;
-	vertical-align: middle;
-	margin-top: -470px;
-	z-index:1;
-}
-#modal .modal_content {
-  width:700px;
-  margin:100px auto;
-  padding:20px 40px;
-  background:#fff;
-  border:2px solid #666;
-}
-#title{
- 	font-size: 26px;
- 	font-weight: bold;
- 	text-align: center;
- 	line-height: 1;
- 	padding: 10px 30px 30px 30px;
- 	padding-bottom: 30px;
- 	border-bottom: 4px solid #2e3238;
- }
- #modalCloseBtn{
- 	width: 24px;
- 	height: 25px;
- 	float: right;
- 	position: relative;
- 	right: -200px;
- 	top: -160px;
- 	background: url("../../img/list/pop_close.png") no-repeat;
- 	/* border: 1px solid black; */
- }
- #modalCloseBtn:hover{
- 	cursor: pointer;
- }
- #detailContents{
- 	border-bottom: 4px solid #2e3238;
- }
- #txtContents{
- 	/* width: 700px; */
- 	padding: 20px 0;
- 	font-size: 14px;
- 	height: 380px;
- 	overflow-y: scroll;
- 	-ms-overflow-style: none;
- 	box-sizing: border-box;
- }
-#txtContents::-webkit-scrollbar{ 
-	display:none; 
-}
-#prevNext{
-	margin-top: 20px;
-	box-sizing: border-box;
-	/* border: 1px solid black; */
-}
-.list{
-	padding: 10px 0;
-	border-top: 2px solid #e8ebed;
-}
-.ttl{
-	width: 20%;
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-	display: inline-block;
-	border-right: 2px solid #e8ebed;
-	box-sizing: border-box;
-}
-.list > a{
- 	width: 80%;
-	padding-left: 20px;
-	font-size: 14px;
-} 
-#modal .modal_layer {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0, 0, 0, 0.5);
-  z-index:-1;
-}
-#btn_area{
-	width: 100%;
-	float: left;
-	text-align: center;
-	margin-top: 30px;
-	/* border: 1px solid black; */
-}
-#btn_body{
-	display: inline-block;
-}
-#goSave{
-	width: 91px;
-	height: 40px;
-	background: black;
-	border-radius: 5px;
-	font-size: 16px;
-	color: #fff;
-	margin-left: 5px;
-}
-/* View Page - modal END */
-
-#writeBtn_area{
-	width: 1200px;
-	margin: 0 auto;
-	margin-top: 30px;
-	/* border: 1px solid black; */
-}
-#writeBtn_area input{
-	width: 100px;
-	height: 50px;
-	background: black;
-	border-radius: 5px;
-	font-size: 16px;
-	color: #fff;
-	float: right;	
-}
 #pageNum_area{
 	width: 100%;
 	height: 30px;
@@ -280,5 +148,46 @@ td[class="list_ttl_area"]{
 	top: -3px;
 }
 #footer_area{
-	margin-top: 200px;
+	margin-top: 100px;
+}
+
+
+
+/* modal Test */
+#modal {
+	display: none;
+	position:relative;
+	width:100%;
+	height:100%;
+	vertical-align: middle;
+	margin-top: -400px;
+	z-index:1;
+}
+
+#modal h2 {
+	margin: 0;
+}
+
+#modal button {
+  display:inline-block;
+  width:100px;
+  margin-left:calc(100% - 100px - 10px);
+}
+
+#modal .modal_content {
+  width:800px;
+  margin:100px auto;
+  padding:20px 10px;
+  background:#fff;
+  border:2px solid #666;
+}
+
+#modal .modal_layer {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index:-1;
 }

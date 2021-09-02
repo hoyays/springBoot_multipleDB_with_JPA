@@ -1,0 +1,58 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+	/* border: 1px solid black; */
+}
+a{
+	text-decoration-line: none; 
+}
+a:link{ 
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+}
+a:visited{ 
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+}
+a:hover{
+	font-weight: 900;
+}
+a[id="h2"]:hover{
+	border-bottom: 4px solid black;	
+}
+a[id="oracle"]:hover{
+	border-bottom: 4px solid black;	
+}
+a[id="CI_leftSide"]:hover{
+	border-bottom: none;
+}
+#CI_area{
+	width: 180px;
+	height: 80px;
+	margin-top: 5px;
+	float: left;
+	/* border: 1px solid blue; */
+}
+.board_icon{
+	width: 150px;
+	height: 70px;
+	font-size: 20px;
+	font-weight: bold;
+	float: right;
+	padding-top: 22px;
+	padding-left: 10px;
+	margin-left: 15px;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+}
+.board_icon img{
+	width: 30px;
+}

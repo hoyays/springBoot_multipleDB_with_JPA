@@ -4,48 +4,54 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>H2DB - Board Write</title>
-		<link rel="stylesheet" href="/css/h2Board/write.css">
+		<title>Member Join</title>
+		<link rel="stylesheet" href="/css/member/join.css">
 	</head>
 	<body>
 		<!-- header include -->
 		<%@ include file="../header.jsp" %>
 		<!-- /header include -->
-		
+	
 		<div id="title_area">
-			<p><strong>H2DB</strong> Board Write</p>
+			<p>Member Join</p>
 		</div>
-				
+	
 		<div id="write_area">
 			<form action="">
 				<table>
 					<colgroup>
-						<col width="20%">
-						<col width="80%">
+						<col width="35%">
+						<col width="65%">
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>제목</th>
+							<th>ID</th>
 							<td>
-								<input type="text" id="" name="" placeholder="제목을 입력해 주세요!">
+								<input type="text" id="" name="" placeholder="아이디">
 							</td>
 						</tr>
 						<tr>
-							<th>작성자</th>
+							<th>Name</th>
 							<td>
-								<input type="text" id="" name="" placeholder="작성자 입력">
+								<input type="text" id="" name="" placeholder="이름">
 							</td>
 						</tr>
 						<tr>
-							<th>내용</th>
+							<th>Password</th>
 							<td>
-								<input type="text" id="" name="" placeholder="내용 입력">
+								<input type="password" id="" name="" placeholder="비밀번호">
 							</td>
 						</tr>
 						<tr>
-							<th>첨부파일</th>
+							<th>Password 확인</th>
 							<td>
-								<input type="file" id="" name="" placeholder="첨부파일 입력">
+								<input type="password" id="" name="" placeholder="비밀번호 확인">
+							</td>
+						</tr>
+						<tr>
+							<th>E-mail</th>
+							<td>
+								<input type="text" id="" name="" placeholder="이메일">
 							</td>
 						</tr>
 					</tbody>
@@ -53,8 +59,8 @@
 				
 				<div id="btn_area">
 					<div id="btn_body">
-						<input type="button" id="goSave" name="" value="저장">
-						<a href="/h2/list"><input type="button" id="goList" name="" value="목록"></a>
+						<input type="button" id="goSave" name="" value="가입">
+						<a href="/"><input type="button" id="goList" name="" value="취소"></a>
 					</div>
 				</div>
 			</form>
@@ -65,6 +71,6 @@
 			<%@ include file="../footer.jsp" %>
 		</div>		
 		<!-- /footer include -->
-		
+	
 	</body>
 </html>

@@ -8,7 +8,7 @@
 				<a href="/" id="CI_leftSide"><img alt="Huation CI" src="/img/headerFooter/huation_CI_4.png" /></a>
 			</div>
 			<div class="board_icon">
-				<a href="/oracle/list" id="oracle"><img alt="" src="/img/headerFooter/oracle_icon.png">오라클DB</a>
+				<a id="oracle"><img alt="" src="/img/headerFooter/oracle_icon.png">오라클DB</a>
 			</div>
 			<div class="board_icon">
 				<a href="/h2/list" id="h2"><img alt="" src="/img/headerFooter/h2_icon.png">H2DB</a>

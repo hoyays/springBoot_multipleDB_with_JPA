@@ -4,18 +4,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>H2DB - Board Write</title>
-		<link rel="stylesheet" href="/css/h2Board/write.css">
+		<title>Oracle - Board Write</title>
+		<link rel="stylesheet" href="/css/oracleBoard/write.css">
 	</head>
 	<body>
+	
 		<!-- header include -->
 		<%@ include file="../header.jsp" %>
 		<!-- /header include -->
-		
+	
 		<div id="title_area">
-			<p><strong>H2DB</strong> Board Write</p>
+			<p><strong>Oracle</strong> Board Write</p>
 		</div>
-				
+		
 		<div id="write_area">
 			<form action="">
 				<table>
@@ -54,7 +55,7 @@
 				<div id="btn_area">
 					<div id="btn_body">
 						<input type="button" id="goSave" name="" value="저장">
-						<a href="/h2/list"><input type="button" id="goList" name="" value="목록"></a>
+						<a href="/oracle/list"><input type="button" id="goList" name="" value="목록"></a>
 					</div>
 				</div>
 			</form>
@@ -65,6 +66,6 @@
 			<%@ include file="../footer.jsp" %>
 		</div>		
 		<!-- /footer include -->
-		
+	
 	</body>
 </html>

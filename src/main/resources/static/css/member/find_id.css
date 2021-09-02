@@ -1,0 +1,76 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+#title_area{
+	width: 1000px;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+}
+#title_area h3{
+	margin: 50px 0;
+}
+#title_area h1{
+	line-height: 55px;
+	margin: 40px 0;
+}
+#findInfo{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+table{
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+th{
+	height: 60px;
+}
+td{
+	height: 60px;
+}
+tbody input{
+	width: 80%;
+	height: 35px;
+	background: #dcdcdc;
+	border: none;
+}
+input:focus::-webkit-input-placeholder {
+	color:transparent; 
+}
+#btn_area{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 30px;
+	/* border: 1px solid black; */
+}
+#btn_body{
+	display: inline-block;
+}
+#goSave{
+	width: 91px;
+	height: 40px;
+	background: black;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #fff;
+	margin-left: 5px;
+}
+#goList{
+	width: 91px;
+	height: 40px;
+	background: #d2d2d2;
+	border-color: #d2d2d2;
+	border-radius: 5px;
+	font-size: 16px;
+	color: black;
+	margin-left: 5px;
+}
+#footer_area{
+	margin-top: 100px;
+}

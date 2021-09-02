@@ -20,7 +20,7 @@
 	text-align: center;
 }
 #title_area strong{
-	color: blue;
+	color: red;
 }
 input:focus::-webkit-input-placeholder {
 	color:transparent; 

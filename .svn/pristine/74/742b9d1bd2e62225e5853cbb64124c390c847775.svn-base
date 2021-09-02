@@ -19,14 +19,11 @@
 	font-weight: bold;
 	text-align: center;
 }
-#title_area strong{
-	color: blue;
-}
 input:focus::-webkit-input-placeholder {
 	color:transparent; 
 }
 #write_area{
-	width: 1200px;
+	width: 520px;
 	margin: 0 auto;
 	margin-top: 40px;
 	/* border: 1px solid black; */
@@ -55,7 +52,7 @@ td{
 	border-bottom: 1px solid #252525;
 }
 tbody input{
-	width: 98%;
+	width: 92%;
 	height: 40px;
 }
 #btn_area{

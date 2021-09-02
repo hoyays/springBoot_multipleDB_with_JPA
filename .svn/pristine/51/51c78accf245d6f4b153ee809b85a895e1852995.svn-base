@@ -15,7 +15,7 @@
 			}
 			
 			$(document).ready(function(){
-			     $("#modalCloseBtn").click(function(){
+			     $("#modal_close_btn").click(function(){
 			        $("#modal").attr("style", "display:none");
 			    });      
 			});
@@ -28,7 +28,7 @@
 		<!-- /header include -->
 		
 		<div id="title_area">
-			<p><strong>H2DB</strong> Board List</p>
+			<p>H2DB Board List</p>
 		</div>
 		<div id="listTop_area">
 			<div id="searchBox">
@@ -74,92 +74,24 @@
 			</table>
 		</div>
 		
-		<!-- View Page - Modal Start-->
+		<!-- modal Test-->
 		<div id="modal">
 		   
 		    <div class="modal_content">
-		       	<p id="title">
-		       		제목입니다.
-		       		<div id="modalCloseBtn"></div>
-		       	</p>
-		       	<div id="detailContents">
-		       		<div id="txtContents">
-		       			내용입니다.<br>
-		       			1<br>
-		       			2<br>
-		       			3<br>
-		       			4<br>
-		       			5<br>
-		       			6<br>
-		       			7<br>
-		       			8<br>
-		       			9<br>
-		       			10<br>
-		       			11<br>
-		       			12<br>
-		       			13<br>
-		       			14<br>
-		       			15<br>
-		       			16<br>
-		       			17<br>
-		       			18<br>
-		       			19<br>
-		       			20<br>
-		       			1<br>
-		       			2<br>
-		       			3<br>
-		       			4<br>
-		       			5<br>
-		       			6<br>
-		       			7<br>
-		       			8<br>
-		       			9<br>
-		       			10<br>
-		       			11<br>
-		       			12<br>
-		       			13<br>
-		       			14<br>
-		       			15<br>
-		       			16<br>
-		       			17<br>
-		       			18<br>
-		       			19<br>
-		       			20<br>
-		       		</div>
-
-		       		<div id="prevNext">
-		       			<div class="list">
-		       				<p class="ttl">이전글</p>
-		       				<a>글 제목입니다.</a>
-		       			</div>
-		       			<div class="list">
-		       				<p class="ttl">다음글</p>
-		       				<a>글 제목입니다.</a>
-		       			</div>
-		       		</div>
-		       		
-		       		<div id="btn_area">
-						<div id="btn_body">
-							<input type="button" id="goSave" name="" value="저장">
-						</div>
-					</div>
-					
-		       	</div>
-		    </div><!-- /modal_content -->
+		        <h2>모달 창</h2>
+		       
+		        <p>모달 창 입니다.</p>
+		       
+		        <button type="button" id="modal_close_btn">모달 창 닫기</button>
+		       
+		    </div>
+		   
 		    <div class="modal_layer"></div>
 		</div>
-		<!-- View Page - Modal END-->
+		<!-- /modal Test -->
 		
 		
-		<div id="writeBtn_area">
-			<a href="/h2/write"><input type="button" id="" name="" value="WRITE"></a>
-		</div>
 		
-		
-		<!-- 
-		(참고) Page Number 가운데 정렬 : 
-		https://eggmoneyna811.tistory.com/entry/paging%EB%B6%80%EB%B6%84-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC
-		 -->
 		<div id="pageNum_area">
 			<div id="paging_body">
 				<ul id="pageNum_ul">

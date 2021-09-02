@@ -29,7 +29,7 @@ body{
 	text-align: center;
 }
 #title_area strong{
-	color: blue;
+	color: red;
 }
 #listTop_area{
 	width: 1200px;
@@ -240,6 +240,7 @@ td[class="list_ttl_area"]{
 	color: #fff;
 	float: right;	
 }
+
 #pageNum_area{
 	width: 100%;
 	height: 30px;

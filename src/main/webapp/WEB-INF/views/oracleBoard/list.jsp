@@ -4,8 +4,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>H2DB - Board List</title>
-		<link rel="stylesheet" href="/css/h2Board/list.css">
+		<title>Oracle - Board List</title>
+		<link rel="stylesheet" href="/css/oracleBoard/list.css">
 		<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript">
 		
@@ -20,7 +20,6 @@
 			    });      
 			});
 		</script>
-		
 	</head>
 	<body>
 		<!-- header include -->
@@ -28,8 +27,9 @@
 		<!-- /header include -->
 		
 		<div id="title_area">
-			<p><strong>H2DB</strong> Board List</p>
+			<p><strong>Oracle</strong> Board List</p>
 		</div>
+		
 		<div id="listTop_area">
 			<div id="searchBox">
 				<form action="">
@@ -44,6 +44,7 @@
 			</div>
 			<p id="totalCnt_area">전체<strong id="totalCnt">215</strong>건</p>
 		</div>
+		
 		<div id="listDetail_area">
 			<table>
 				<colgroup>
@@ -152,7 +153,7 @@
 		
 		
 		<div id="writeBtn_area">
-			<a href="/h2/write"><input type="button" id="" name="" value="WRITE"></a>
+			<a href="/oracle/write"><input type="button" id="" name="" value="WRITE"></a>
 		</div>
 		
 		
@@ -180,10 +181,12 @@
 				</ul>
 			</div>
 		</div>
+		
 		<!-- footer include -->
 		<div id="footer_area">
 			<%@ include file="../footer.jsp" %>
 		</div>		
 		<!-- /footer include -->
+		
 	</body>
 </html>
