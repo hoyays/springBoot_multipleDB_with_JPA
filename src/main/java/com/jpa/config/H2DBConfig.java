@@ -39,7 +39,7 @@ public class H2DBConfig {
 			@Qualifier("H2DataSource")DataSource dataSource) {
 		
 		Map<String, Object> properties = new HashMap<>();
-		properties.put("hibernate.hbm2ddl.auto", "none");
+		properties.put("hibernate.hbm2ddl.auto", "update");
 		properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 		
 		return builder.dataSource(dataSource)

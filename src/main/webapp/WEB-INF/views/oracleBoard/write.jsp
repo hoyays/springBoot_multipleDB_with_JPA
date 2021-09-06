@@ -6,6 +6,18 @@
 		<meta charset="UTF-8">
 		<title>Oracle - Board Write</title>
 		<link rel="stylesheet" href="/css/oracleBoard/write.css">
+		<script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
+		<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript">
+			
+			/** 
+			 * 목록으로 (이동)
+			 */
+			 
+			function goList(){
+				location.href="/oracle/list";
+			}
+		</script>
 	</head>
 	<body>
 	
@@ -28,19 +40,24 @@
 						<tr>
 							<th>제목</th>
 							<td>
-								<input type="text" id="" name="" placeholder="제목을 입력해 주세요!">
+								<input type="text" id="title" name="title" placeholder="제목을 입력해 주세요!">
 							</td>
 						</tr>
 						<tr>
 							<th>작성자</th>
 							<td>
-								<input type="text" id="" name="" placeholder="작성자 입력">
+								<input type="text" id="writer" name="writer" placeholder="작성자 입력">
 							</td>
 						</tr>
 						<tr>
 							<th>내용</th>
 							<td>
-								<input type="text" id="" name="" placeholder="내용 입력">
+								<input type="text" id="contents" name="contents" placeholder="내용 입력">
+								<!-- CKeditor 적용 -->
+								<script type="text/javascript">
+									//내용 input박스와 CKeditor 연결
+									CKEDITOR.replace('contents', {height: 500});  
+								</script>
 							</td>
 						</tr>
 						<tr>
@@ -54,8 +71,8 @@
 				
 				<div id="btn_area">
 					<div id="btn_body">
-						<input type="button" id="goSave" name="" value="저장">
-						<a href="/oracle/list"><input type="button" id="goList" name="" value="목록"></a>
+						<input type="button" id="saveBtn" onclick="goSave()" value="저장">
+						<input type="button" id="listBtn" onclick="goList()" value="목록">
 					</div>
 				</div>
 			</form>
