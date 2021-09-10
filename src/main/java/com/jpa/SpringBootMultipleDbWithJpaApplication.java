@@ -25,20 +25,32 @@ public class SpringBootMultipleDbWithJpaApplication {
 	
 	//테스트
 	//Data insert하기(import.sql 파일이 실행 안되고 있어 아래 방법으로 데이터 insert함)
+//	@Autowired
+//	private H2DBRepo h2Repository;
+//	
+//	@PostConstruct
+//	//초기화 메소드에 붙이는 어노테이션, WAS가 띄워질 때 실행된다. 
+//	//종속성 주입이 완료된 후 메소드가 실행된다.
+//	public void addData2DB() {
+//		h2Repository.saveAll(Stream.of(new H2Board("테스트제목", "admin","테스트내용입니다.", "2021-09-01", 100)).collect(Collectors.toList()));
+//		h2Repository.saveAll(Stream.of(new H2Board("최초 로딩된 두번째 제목", "aaaaa","두번째 내용입니다.", "2021-09-02", 200)).collect(Collectors.toList()));
+//	}
 	
-	@Autowired
-	private H2DBRepo h2Repository;
-	
-	@PostConstruct
-	//초기화 메소드에 붙이는 어노테이션, WAS가 띄워질 때 실행된다. 
-	//종속성 주입이 완료된 후 메소드가 실행된다.
-	public void addData2DB() {
-		h2Repository.saveAll(Stream.of(new H2Board("테스트제목", "admin","테스트내용입니다.")).collect(Collectors.toList()));
-	}
+
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+//	참고 : https://www.youtube.com/watch?v=iDogrHEo4x0	
+//	(참고) 아래는 원본 코딩 소스입니다.
+//	
+//	
 //	@Autowired
 //	private BookRepository bookRepository;
 //	

@@ -9,9 +9,9 @@ html, body{
 body{ 
 	-ms-overflow-style: none; 
 } 
-::-webkit-scrollbar { 
+/* ::-webkit-scrollbar { 
 	display: none; 
-}
+} */
 #title_area{
 	width: 1200px;
 	height: 100px;
@@ -130,6 +130,7 @@ td[class="list_ttl_area"]{
 }
 #modal .modal_content {
   width:700px;
+  border-radius: 20px;
   margin:100px auto;
   padding:20px 40px;
   background:#fff;
@@ -150,7 +151,7 @@ td[class="list_ttl_area"]{
  	float: right;
  	position: relative;
  	right: -200px;
- 	top: -160px;
+ 	top: -105px;
  	background: url("../../img/list/pop_close.png") no-repeat;
  	/* border: 1px solid black; */
  }

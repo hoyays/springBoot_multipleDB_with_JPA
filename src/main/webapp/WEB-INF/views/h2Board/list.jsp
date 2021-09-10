@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,8 +11,27 @@
 		<script type="text/javascript">
 		
 			//modal 참고 블로그 : https://kuzuro.blogspot.com/2018/09/blog-post.html
-			function modal_open(){
+			function showDetail(id){
 				$("#modal").attr("style", "display:block");
+				
+				$.post(
+					"/h2/detail",
+					{
+						"id":id
+					},
+					function(result){
+						
+						console.log(result);
+						
+						$("#title").text(result.title);
+						$("#txtContents").text(result.contents);
+						
+					},
+					"json"
+				);//ajax
+				
+				
+				
 			}
 			
 			$(document).ready(function(){
@@ -63,13 +83,17 @@
 					</tr>
 				</thead>
 				<tbody>
+					<!-- loop START -->
+					<c:forEach var="dto" items="${map.listDto}">
 					<tr>
-						<td>111</td>
-						<td class="list_ttl_area"><a href="javascript:void(0)" onclick="modal_open()">테스트제목입니다.</a></td>
-						<td>홍길동</td>
-						<td>2021-09-01</td>
-						<td>10</td>
+						<td>${dto.id}</td>
+						<td class="list_ttl_area"><a href="javascript:void(0)" onclick="showDetail(${dto.id})">${dto.title}</a></td>
+						<td>${dto.writer}</td>
+						<td>${dto.createDate}</td>
+						<td>${dto.hitNum}</td>
 					</tr>
+					</c:forEach>
+					<!-- loop END -->
 				</tbody>
 			</table>
 		</div>
@@ -140,7 +164,7 @@
 		       		
 		       		<div id="btn_area">
 						<div id="btn_body">
-							<input type="button" id="goSave" name="" value="저장">
+							<input type="button" id="goSave" name="" value="수정">
 						</div>
 					</div>
 					
