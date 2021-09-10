@@ -103,52 +103,12 @@
 		   
 		    <div class="modal_content">
 		       	<p id="title">
-		       		제목입니다.
+		       		<!-- 상세페이지 제목이 들어가는 자리 -->
 		       		<div id="modalCloseBtn"></div>
 		       	</p>
 		       	<div id="detailContents">
 		       		<div id="txtContents">
-		       			내용입니다.<br>
-		       			1<br>
-		       			2<br>
-		       			3<br>
-		       			4<br>
-		       			5<br>
-		       			6<br>
-		       			7<br>
-		       			8<br>
-		       			9<br>
-		       			10<br>
-		       			11<br>
-		       			12<br>
-		       			13<br>
-		       			14<br>
-		       			15<br>
-		       			16<br>
-		       			17<br>
-		       			18<br>
-		       			19<br>
-		       			20<br>
-		       			1<br>
-		       			2<br>
-		       			3<br>
-		       			4<br>
-		       			5<br>
-		       			6<br>
-		       			7<br>
-		       			8<br>
-		       			9<br>
-		       			10<br>
-		       			11<br>
-		       			12<br>
-		       			13<br>
-		       			14<br>
-		       			15<br>
-		       			16<br>
-		       			17<br>
-		       			18<br>
-		       			19<br>
-		       			20<br>
+		       			<!-- 상세페이지 내용이 들어가는 자리 -->
 		       		</div>
 
 		       		<div id="prevNext">

@@ -17,20 +17,16 @@ import lombok.NoArgsConstructor;
 @Entity
 public class H2Board {
 
-	//** H2 파일모드인 경우 **
+	//** H2파일모드인 경우 **
 	//1. 
 	//GenerationType을 AUTO로 설정했을 경우 테이블 확인결과, ID값에 1부터 들어가지 않는다.
 	//예를 들어, table을 drop한 후 다시 데이터를 넣으면 1부터 들어가는게 아니라
 	//drop 하기 전 table의 ID 숫자를 이어서 insert 한다.
 	//2. 
-	//GenerationType을 IDENTITY로 설정했을 경우 main class에 작성된 insert 데이터가 계속 중복되어 들어간다.
+	//GenerationType을 IDENTITY로 설정했을 경우 main class에 작성된 insert 데이터가 중복되어 들어간다.
 	//3. 
 	//완전 주석처리할 경우, 에러발생!!! (Unique index or primary key violation)
 	
-	
-	//** H2 인메모리 모드인 경우 **
-	//1.
-	//GenerationType을 IDENTITY로 설정하면 OK
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;              //글번호, PK
